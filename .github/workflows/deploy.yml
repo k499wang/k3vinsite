@@ -41,7 +41,7 @@ jobs:
           script: |
             git clone https://k499wang:${{ secrets.TOKENSH }}@github.com/k499wang/k3vinsite.git
             cd k3vinsite
-            git pull origin main
+            git pull origin master
             npm install
             npm run build
             pm2 stop all || true
