@@ -53,9 +53,7 @@ jobs:
             sudo chown -R www-data:www-data /var/www/astro/
             sudo chmod -R 755 /var/www/astro/
 
-            sudo cp ~/k3vinsite/astro.conf /etc/nginx/sites-available/astro.conf
-
             sudo ln -s /etc/nginx/sites-available/astro.conf /etc/nginx/sites-enabled/astro.conf
             sudo nginx -s reload
 
-            sudo rm /etc/nginx/sites-enabled/default
+            sudo systemctl restart nginx
