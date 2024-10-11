@@ -40,14 +40,7 @@ jobs:
           key: ${{ secrets.SSHKEY }}
           script: |
             cd /var/www/html
-
-            if [ ! -d ".git" ]; then
-              git clone https://github.com/your-repo.git .
-            fi
-
-            git pull origin main
-            
+            git clone https://github.com/your-repo.git .
+            git pull origin main    
             npm install
-            npm run build
-            
-            pm2 restart all
+            npm run build      
