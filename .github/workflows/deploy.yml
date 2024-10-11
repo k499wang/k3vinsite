@@ -39,8 +39,9 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
-            cd /var/www/html
-            git clone https://github.com/your-repo.git .
+            git clone https://github.com/k499wang/k3vinsite
             git pull origin main    
             npm install
             npm run build      
+            pm2 stop all || true
+            pm2 start npm --name "k3vinsite" -- run start
