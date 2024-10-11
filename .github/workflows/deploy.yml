@@ -39,7 +39,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
-            git remote set-url origin https://499wang${{secrets.TOKENSH}}@github.com/k499wang/k3vinsite.git
+            git remote set-url origin https://k499wang:${{ secrets.TOKENSH }}@github.com/k499wang/k3vinsite.git
             cd k3vinsite
             git pull origin main
             npm install
