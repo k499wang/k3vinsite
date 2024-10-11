@@ -1,0 +1,30 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches:
+      - main 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Deploy to VPS using SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: ls
+
+
+# The above code is a YAML file that defines a GitHub Actions workflow. This workflow is triggered when a push event occurs on the main branch. The workflow runs on a Ubuntu runner and consists of a single job called deploy. The job has two steps:
+            # cd /var/www/html
+            # git pull origin main
+            # git status
+            # npm install
+            # npm run build
+            # pm2 restart all
