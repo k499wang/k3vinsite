@@ -1,14 +1,14 @@
 ---
-layout: ../../layouts/blog.astro
-title: "Sample Post"
-date: "2023-10-05"
-description: "This is a sample blog post."
+layout: ../../layouts/Blog.astro
+title: "What I Learned"
+date: "2024-10-13"
+description: "This is Kevin's first post on his learnings on the perfect beginners DevOps project"
 author: "Kevin"
 ---
 
-# Sample Post
+# Introduction
 
-Welcome to my blog! This is a sample post to demonstrate how to import a layout in markdown.
+Welcome to my blog! This is a blog post illustrating what I learned from learning how to setup a blog post
 
 ## Introduction
 
