@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import NavBar from '../components/NavBar.astro';
+import Card from '../components/Card.astro';
 const allPosts = await Astro.glob('./posts/*.md');
 ---
 
@@ -38,10 +39,14 @@ const allPosts = await Astro.glob('./posts/*.md');
 		<NavBar></NavBar>
 		<h1>k3vin's Site</h1>
 
-		<p>This is where I will post about my journey learning Astro.</p>
-		<ul>
-			{allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
-		</ul>
+		<p>This is where I will post about my journey as a computer science student.</p>
+		
+		{allPosts.map((post) => (
+			<Card title={post.frontmatter.title} body={post.frontmatter.description} href={post.url ?? '#'}>
+				<a href={post.url}>{post.frontmatter.title}</a>
+			</Card>
+		))}
+		
 
 	</main>
 </body>
