@@ -47,4 +47,8 @@ However, this was valuable learning experience. Althought this might not seem li
 as I needed to learn the fundamentals of everything and to be quite frank there weren't many good quality resources online of what to do
 especially if you were on a budget. 
 
+I learned how to automate repetitive tasks, such as testing and deployment, reudcing error and increasing efficiency. I also learnt what CI/CD meant, which meant integrating code changes in to the shared repository and automating the deployment of these changes. 
+
+# References: 
+https://loganmarchione.com/2022/10/the-best-devops-project-for-a-beginner/
 
