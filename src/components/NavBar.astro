@@ -1,0 +1,45 @@
+---
+---
+
+<style>
+    nav {
+        background-color: #242424;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin: 0 0.5rem;
+    }
+    a {
+        color: rgb(184, 167, 167);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-size: 0.8rem;
+    }
+    a:hover {
+        color: #ddd;
+    }
+    @media (max-width: 768px) {
+        ul {
+            flex-direction: column;
+            align-items: center;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+    }
+</style>
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">About</a></li>
+    </ul>
+</nav>
