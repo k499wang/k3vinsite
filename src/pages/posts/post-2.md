@@ -6,6 +6,8 @@ description: "Following the Cloud Resume Challenge"
 author: "Kevin"
 ---
 
+You can find my resume here: https://k3-vin-wvng-resume.works/
+
 # Introduction
 As a upcoming young freshie in the Computer Science field, I wanted to expand and fill my wonderful young
 brain with the upcoming and new technologies in the field. That's why I decided to follow this challenge.
