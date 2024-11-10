@@ -9,15 +9,13 @@ author: "Kevin"
 You can find my resume here: https://k3-vin-wvng-resume.works/
 
 # Introduction
-As a upcoming young freshie in the Computer Science field, I wanted to expand and fill my wonderful young
-brain with the upcoming and new technologies in the field. That's why I decided to follow this challenge.
-The key components of this challenge were getting familiar with AWS technologies, such as S3 Buckets, Setting up IAM
-policies etc. Below outlines the most important things I learned during this challenge.
+As an enthusiastic newcomer to the Computer Science field, I’m eager to explore and deepen my knowledge of emerging technologies. To kickstart my journey, I took on this challenge to learn about the AWS ecosystem and its powerful services. This experience has been transformative, helping me build foundational skills in AWS and cloud computing. Below, I outline the most valuable lessons learned during this project.
 
 Here are my repositories btw: 
 [GitHub Repository: k3vin-s-resume](https://github.com/k499wang/k3vin-s-resume)
 [Infrastructure as Code Repository: resume-iac-code](https://github.com/k499wang/resume-iac-code)
 
+## Accomplishments 
 
 1. Setting Up an S3 Bucket for Static Hosting
 Creating an S3 bucket to host static content is straightforward and serves as the foundation of the project. I configured my bucket with the following key settings:
@@ -48,4 +46,6 @@ The Lambda function serves various purposes, such as processing data or interact
 I encountered challenges with CloudFront caching not updating on file changes in S3. After modifying objects, I needed to invalidate the CloudFront cache manually to ensure users received the latest content. This step highlighted the importance of understanding CDN behavior and how it impacts content delivery.
 
 8. Troubleshooting DynamoDB Integration
-While working on the Lambda function, I faced DynamoDB errors due to misconfigured permissions. I addressed this by creating a comprehensive IAM policy that allowed my function to perform necessary operations on the DynamoDB table. Learning to troubleshoot and configure AWS services effectively is a crucial skill in cloud development
+During Lambda function development, I faced access issues with DynamoDB due to permission misconfigurations. Creating a refined IAM policy resolved these errors, highlighting the need for precise permissions and troubleshooting skills when working with cloud databases.
+
+This AWS project has been invaluable in expanding my understanding of cloud technologies. Beyond technical skills, it underscored the importance of security, efficient data handling, and scalable infrastructure in modern web development. These foundational experiences have motivated me to continue exploring cloud solutions and leveraging them to build more resilient and secure applications. As I advance in my career, I’m excited to apply these skills to new challenges and further expand my expertise in cloud computing.

@@ -1,9 +1,8 @@
 # k3vin's Astro Website
 
-
 ## 🚀 Project Structure
 
-Inside of this Astro project, you'll see the following folders and files:
+Inside this Astro project, you'll see the following folders and files:
 
 ```text
 /
@@ -11,17 +10,17 @@ Inside of this Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── Card.astro
 │   │   └── NavBar.astro 
 │   ├── layouts/
-│   │   └── Layout.astro
+│   │   ├── Layout.astro
 │   │   └── Blog.astro
 │   └── pages/
-│   │    └── index.astro
-│   └── posts
-│   │    └── post1.md
-│   │    └── post2.md
-│   │    └── ...
+│   │   ├── index.astro
+│   └── posts/
+│   │   ├── post1.md
+│   │   ├── post2.md
+│   │   └── ...
 └── package.json
 ```
 
@@ -39,11 +38,11 @@ All commands are run from the root of the project, from a terminal:
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm run build`           | Builds your production site to `./dist/`         |
+| `npm run preview`         | Previews your build locally, before deploying    |
+| `npm run astro ...`       | Runs CLI commands like `astro add`, `astro check`|
+| `npm run astro -- --help` | Gets help using the Astro CLI                    |
 
-## Contact
+## 📧 Contact
 
-Contact me here at k499wang@uwaterloo.ca
+Contact me at k499wang@uwaterloo.ca

@@ -3,9 +3,11 @@
 
 <style>
     nav {
-        background-color: #242424;
+        background-color: initial;
         padding: 0.5rem 0.5rem;
         border-radius: 8px;
+        max-width: 90%; /* Adjust this value to make the nav horizontally smaller */
+        margin: 0 auto; /* Center the nav horizontally */
     }
     ul {
         list-style: none;
@@ -22,9 +24,14 @@
         text-decoration: none;
         transition: color 0.3s ease;
         font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid rgb(184, 167, 167);
+        border-radius: 4px;
+        background-color: transparent;
     }
     a:hover {
         color: #ddd;
+        background-color: rgba(184, 167, 167, 0.1);
     }
     @media (max-width: 768px) {
         ul {
@@ -39,6 +46,8 @@
 
 <nav>
     <ul>
-        <li><a href="/">Home</a></li>
+        <li>
+            <a href="/" class="button">Home</a>
+        </li>
     </ul>
 </nav>

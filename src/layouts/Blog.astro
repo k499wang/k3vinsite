@@ -21,32 +21,25 @@ const { frontmatter } = Astro.props;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		color: #e0e0e0; /* Light text color for readability */
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
+	
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+		color: rgb(var(--accent-light)); /* Accent color */
 	}
 
 	.content-wrapper {
-		background-color: #2b2b2b; /* Darker background for the slot content */
-		border-radius: 15px; /* Curved edges */
-		padding: 2rem; /* Padding for spacing inside */
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a card effect */
+		background: linear-gradient(145deg, #2a2f36, #1c1f24); /* Gradient similar to the blog card */
+		border-radius: 15px;
+		padding: 2rem;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adjusted for stronger shadow */
 		margin-bottom: 2rem;
 	}
 </style>
