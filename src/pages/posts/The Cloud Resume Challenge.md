@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Blog.astro
 title: "My Cloud Resume"
-date: "2024-10-13"
+date: "2024-11-04"
 description: "Following the Cloud Resume Challenge"
 author: "Kevin"
 ---
